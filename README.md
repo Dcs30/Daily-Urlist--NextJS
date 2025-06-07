@@ -1,155 +1,128 @@
-# Daily Urlist - NextJS 🔗
+# Daily Urlist - A Modern URL Bookmarking Platform 🌐
 
-<img width="1248" alt="Screenshot 2025-06-02 at 15 15 10" src="https://github.com/user-attachments/assets/3ca8f3ab-1302-4d3a-84dd-d87c336dbac7" />
-<img width="1245" alt="Screenshot 2025-06-02 at 15 15 24" src="https://github.com/user-attachments/assets/6918d01d-1438-434f-a202-b6b51ca3d623" />
-<img width="1269" alt="Screenshot 2025-06-02 at 15 16 17" src="https://github.com/user-attachments/assets/ce1ba99c-31c6-4625-b8ae-86becc2b0912" />
-<img width="1244" alt="Screenshot 2025-06-02 at 15 16 34" src="https://github.com/user-attachments/assets/f73dc1e4-edb4-4606-b3da-b71b913129ff" />
+![Daily Urlist](https://img.shields.io/badge/Version-1.0.0-blue.svg) ![Next.js](https://img.shields.io/badge/Next.js-13%2B-brightgreen.svg) ![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-orange.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-4.0%2B-yellow.svg) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-2.0%2B-purple.svg)
 
-A modern, elegant URL bookmarking and sharing platform built with Next.js 13+, Supabase, TypeScript, and Tailwind CSS.
+Welcome to the **Daily Urlist** repository! This project offers a modern and elegant platform for bookmarking and sharing URLs. Built with **Next.js 13+**, **Supabase**, **TypeScript**, and **Tailwind CSS**, Daily Urlist is designed to enhance your URL management experience.
 
-**Online-Live:** https://daily-urlist.vercel.app/
+## Table of Contents
 
-## Features ✨
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-- **Create & Manage Lists**: Easily organize your URLs into custom lists
-- **Rich URL Previews**: Automatic fetching of metadata, titles, descriptions, and images
-- **Custom URLs**: Create custom slugs for your lists
-- **Responsive Design**: Beautiful, modern UI that works on all devices
-- **Real-time Updates**: Instant updates using Supabase real-time features
-- **Authentication**: Secure email/password authentication
-- **Share Lists**: Share your curated lists with custom URLs
-- **Favorites**: Mark your favorite URLs for quick access
-- **Modern Stack**: Built with Next.js 13+, React, Tailwind CSS, and TypeScript
+## Features
 
-## Tech Stack 🛠️
+- **User Authentication**: Secure login and registration using Supabase Auth.
+- **Bookmark Management**: Easily add, edit, and delete bookmarks.
+- **URL Sharing**: Share your bookmarks with friends and colleagues.
+- **Responsive Design**: Works seamlessly on all devices.
+- **Fast Performance**: Optimized for speed and efficiency.
+- **Search Functionality**: Quickly find bookmarks using a simple search.
 
-- **Frontend**: Next.js 13+, React, TypeScript
-- **Styling**: Tailwind CSS, Heroicons
-- **Backend**: Supabase (Database, Authentication)
-- **State Management**: Nanostores
-- **Deployment**: Vercel
+## Tech Stack
 
-## Getting Started 🚀
+- **Next.js**: A powerful React framework for building server-rendered applications.
+- **Supabase**: An open-source Firebase alternative that provides a PostgreSQL database, authentication, and storage.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Tailwind CSS**: A utility-first CSS framework for creating custom designs.
 
-### Prerequisites
+### Topics
 
-- Node.js 16+ 
-- npm or yarn
-- A Supabase account
+This repository covers a variety of topics, including:
 
-### Installation
+- cheerio
+- nanostores
+- nextjs
+- nextjs14
+- postgresql
+- postgresql-database
+- react
+- react-dom
+- supabase
+- supabase-auth
+- supabase-db
+- supabase-js
+- supabase-storage
+- tailwindcss
+- typescript
+- url
+- url-bookmarker
+- url-collector
+- url-list
+- url-parser
 
-1. Clone the repository:
+## Getting Started
+
+To get started with Daily Urlist, follow these steps:
+
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/urlist.git
-   cd urlist
+   git clone https://github.com/Dcs30/Daily-Urlist--NextJS.git
+   cd Daily-Urlist--NextJS
    ```
 
-2. Install dependencies:
+2. **Install Dependencies**:
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. Create a `.env.local` file in the root directory:
-   ```env
-   # Base URL Configuration
-   NEXT_PUBLIC_BASE_URL=http://localhost:3000
-
-   # Supabase Configuration
+3. **Set Up Environment Variables**:
+   Create a `.env.local` file in the root directory and add your Supabase credentials:
+   ```plaintext
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 
-4. Set up your Supabase project:
-   - Create a new project in Supabase
-   - Run the migration files in the `supabase/migrations` directory
-   - Copy your project URL and anon key to the `.env.local` file
-
-5. Start the development server:
+4. **Run the Development Server**:
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. **Open Your Browser**:
+   Navigate to `http://localhost:3000` to view the application.
 
-### Production Deployment 🌐
+## Usage
 
-The project is configured for deployment on Vercel. When deploying:
+Once the application is running, you can:
 
-1. Connect your repository to Vercel
-2. Set the following environment variables in your Vercel project settings:
-   - `NEXT_PUBLIC_BASE_URL=https://daily-urlist.vercel.app`
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- **Create an Account**: Register using the signup page.
+- **Log In**: Use your credentials to log into your account.
+- **Add Bookmarks**: Use the form to add new URLs to your collection.
+- **Manage Bookmarks**: Edit or delete existing bookmarks as needed.
+- **Share URLs**: Use the sharing options to send bookmarks to others.
 
-## Project Structure 📁
+## Contributing
 
-```
-urlist/
-├── src/
-│   ├── app/                 # Next.js 13+ app directory
-│   ├── components/          # React components
-│   ├── lib/                 # Utility libraries
-│   ├── stores/             # Nanostores state management
-│   └── utils/              # Helper functions
-├── public/                 # Static assets
-├── supabase/              # Supabase configurations
-└── ...config files
-```
+We welcome contributions to improve Daily Urlist. Here’s how you can help:
 
-## Key Features in Detail 🔍
+1. **Fork the Repository**: Click on the "Fork" button at the top right of this page.
+2. **Create a Branch**: Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your commit message"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit your pull request.
 
-### URL List Management
-- Create multiple lists of URLs
-- Add, edit, and remove URLs from lists
-- Automatic metadata fetching for rich previews
-- Custom titles and descriptions for URLs
+## License
 
-### Authentication
-- Secure email/password authentication
-- Protected routes for authenticated users
-- User-specific list management
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-### Sharing
-- Generate shareable links for lists
-- Custom URL slugs for easy sharing
-- Public/private list options
+## Links
 
-### UI/UX
-- Responsive design for all screen sizes
-- Modern, clean interface
-- Loading states and error handling
-- Smooth animations and transitions
+For more information, check the [Releases](https://github.com/Dcs30/Daily-Urlist--NextJS/releases) section for updates and downloadable files.
 
-## Contributing 🤝
+You can also visit the [Releases](https://github.com/Dcs30/Daily-Urlist--NextJS/releases) page to see the latest versions and updates. 
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License 📝
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact 📧
-
-For any questions or suggestions, please contact:
-- Support: arnob_t78@yahoo.com
-- Legal: arnob_t78@yahoo.com
-- Privacy: arnob_t78@yahoo.com
-
-## Acknowledgments 🙏
-
-- [Next.js](https://nextjs.org/)
-- [Supabase](https://supabase.io/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Heroicons](https://heroicons.com/)
-- [Nanostores](https://github.com/nanostores/nanostores)
+Feel free to explore and contribute to the Daily Urlist project!
